@@ -1,0 +1,129 @@
+.analyze-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.analyze-container h2 {
+  color: #1b5e20;
+}
+
+.analyze-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.analyze-field {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 4px;
+}
+
+.analyze-field.grow {
+  flex: 1;
+  min-width: 220px;
+}
+
+.analyze-field input,
+.analyze-field select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.analyze-form button {
+  padding: 11px 24px;
+  background-color: #1b5e20;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.analyze-form button:hover {
+  background-color: #2e7d32;
+}
+
+.analyze-form button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.analyze-error {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.summary-card {
+  background-color: #f1f8e9;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.summary-card .summary-label {
+  font-size: 13px;
+  color: #555;
+}
+
+.summary-card .summary-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b5e20;
+  margin-top: 6px;
+}
+
+.analyze-table-wrapper {
+  overflow-x: auto;
+}
+
+.analyze-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.analyze-table th {
+  background-color: #1b5e20;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.analyze-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.analyze-table tr:hover td {
+  background-color: #f9fbe7;
+}
+
+.analyze-note {
+  font-size: 13px;
+  color: #777;
+  margin-top: 12px;
+}
